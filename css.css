@@ -1,0 +1,168 @@
+** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background-color: #a12727;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo-img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.tab-link {
+    background-color: #ddd;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.tab-link:hover {
+    background-color: #bbb;
+}
+
+.tab-link.active {
+    background-color: #333;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Flexbox pour les mises */
+.mises-container {
+    display: flex;
+    flex-direction: column; /* Vertical alignment */
+    gap: 20px; /* Espacement entre les mises */
+    margin-top: 20px;
+}
+
+/* Style de chaque mise */
+.mise {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    text-align: center;
+    position: relative;
+}
+
+/* Cartes cachées initialement */
+.cards {
+    display: none; /* Cacher les cartes par défaut */
+    margin-top: 10px;
+}
+
+.mise:hover .cards {
+    display: flex; /* Afficher les cartes au survol */
+    justify-content: space-between; /* Espacement des cartes */
+}
+
+/* Style des images des cartes */
+.cards img {
+    max-width: 30px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+/* Agrandissement des cartes au survol */
+.cards img:hover {
+    transform: scale(1.1);
+}
+
+/* Flexbox pour Joker */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease; /* Ajout de la transition pour la boîte */
+}
+
+.box img {
+    max-width: 100px;
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Transition pour l'image */
+}
+
+/* Effet au survol : déplacer légèrement l'image */
+.box:hover img {
+    transform: translateX(10px) rotate(5deg); /* Bouger vers la droite et incliner légèrement */
+}
+
+/* Optionnel : agrandir l'image au survol */
+.box:hover {
+    transform: scale(1.05); /* Augmenter légèrement la taille de la boîte */
+}
+
+
+
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.text-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #a12727;
+    color: white;
+}

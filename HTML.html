@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balatro</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../MaevaKubit/img/logo.png" alt="Logo" class="logo-img">
+        </div>
+    </header>
+
+    <nav class="tabs">
+        <button class="tab-link" onclick="openTab(event, 'Regles')">Regles</button>
+        <button class="tab-link" onclick="openTab(event, 'Joker')">Joker</button>
+        <button class="tab-link" onclick="openTab(event, 'Mises')">Mises</button>
+        <button class="tab-link" onclick="openTab(event, 'Tarot')">Tarot</button>
+    </nav>
+
+    <section id="Regles" class="tab-content">
+        <h2>Règles du Jeu Balatro</h2>
+        <p>
+            Le <strong>jeu vidéo "Balatro"</strong> est un <strong>jeu de cartes roguelike</strong> qui s’inspire des mécanismes de jeux de stratégie comme <em>Slay the Spire</em> et de jeux de cartes classiques comme le poker. Le principe du jeu combine des éléments de stratégie, de construction de deck, et des mécaniques de chance, tout en permettant aux joueurs de construire des combinaisons de cartes pour progresser dans des niveaux et des combats.
+        </p>
+
+        <h3>Principe du jeu vidéo Balatro :</h3>
+
+        <ul>
+            <li><strong>Mécaniques principales :</strong> Le jeu repose sur la <strong>construction de decks</strong> où les joueurs collectent et améliorent des cartes tout au long de leur progression. Chaque carte a des effets spécifiques, influençant directement les résultats de la partie en fonction des combinaisons jouées.</li>
+
+            <li><strong>Progression et Combats :</strong> Les joueurs avancent dans le jeu à travers une série de <strong>niveaux ou d’étages</strong>, souvent représentés par des combats ou des défis de cartes à relever.</li>
+
+            <li><strong>Roguelike :</strong> Comme beaucoup de jeux roguelike, <strong>Balatro</strong> intègre des éléments de <em>mort permanente</em>. Si le joueur échoue, il doit recommencer du début, mais il peut débloquer de nouvelles cartes ou améliorations pour ses futures parties.</li>
+
+            <li><strong>Stratégie et Chance :</strong> Le joueur doit équilibrer la <strong>stratégie</strong> (choisir quelles cartes inclure dans son deck et comment les utiliser) avec la <strong>chance</strong>, car les cartes sont tirées au hasard.</li>
+        </ul>
+
+        <h3>Objectifs :</h3>
+        <p>Le but du jeu est généralement de vaincre une série d’adversaires ou d’ennemis tout en <strong>améliorant son deck</strong> de cartes pour devenir plus puissant.</p>
+
+        <h3>Inspirations :</h3>
+        <p>Le jeu s'inspire de jeux comme <em>Slay the Spire</em> pour la construction de deck et le côté roguelike, mais introduit des mécaniques uniques liées aux <strong>combinaisons de poker</strong>.</p>
+    </section>
+
+    <!-- Section Joker -->
+    <section id="Joker" class="tab-content">
+        <h2>Joker</h2>
+        <p> Les jokers ont une influence sur la partie tel que :</p>
+
+        <div class="content-container">
+            <div class="box">
+                <img src="../MaevaKubit/img/Blueprint.png" alt="Joker Image 1">
+                <div class="text-content">
+                    <h3>Blueprint</h3>
+                    <p>Blueprint est un Joker rare qui copie l'effet du Joker situé immédiatement à sa droite. Tous les Jokers ne sont pas compatibles avec Blueprint, car Blueprint ne peut copier aucun effet de « modificateur passif », mais Blueprint lui-même est compatible. La compatibilité de Blueprint avec les autres Jokers peut être vue dans son infobulle.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="../MaevaKubit/img/Supernova.png" alt="Joker Image 2">
+                <div class="text-content">
+                    <h3>Supernova</h3>
+                    <p>Supernova est un Joker commun qui ajoute Mult en fonction du nombre de fois que la main de score a été jouée dans la partie en cours. Jouer systématiquement les mêmes mains entraînera un boost Mult en constante augmentation , qui peut rester utile jusqu'à la fin de la partie.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="../MaevaKubit/img/Smeared_Joker.png" alt="Joker Image 3">
+                <div class="text-content">
+                    <h3>Smeared</h3>
+                    <p>Smeared est un Joker qui fait que  les Carreaux et  les Cœurs comptent comme étant de la même couleur, et que  les Trèfles et  les Piques comptent comme étant de la même couleur. Cet effet s'applique à tous les Jokers et Blinds qui ont un effet basé sur la couleur.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="../MaevaKubit/img/Perkeo.png" alt="Joker Image 4">
+                <div class="text-content">
+                    <h3>Perkeo</h3>
+                    <p>Ceci est une description détaillée de l'image Joker 3.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section Mises avec flexbox et effet hover -->
+    <section id="Mises" class="tab-content">
+        <h2>Mises</h2>
+
+        <!-- Conteneur principal pour les mises en flexbox -->
+        <div class="mises-container">
+            <div class="mise" onmouseover="showCards(this)" onmouseout="hideCards(this)">
+                <h3>Carre</h3>
+                <div class="cards">
+                    <img src="../MaevaKubit/img/King_of_Hearts.png" alt="Carte 1">
+                    <img src="../MaevaKubit/img/King_of_Hearts.png" alt="Carte 2">
+                    <img src="../MaevaKubit/img/King_of_Hearts.png" alt="Carte 3">
+                    <img src="../MaevaKubit/img/King_of_Hearts.png" alt="Carte 4">
+                </div>
+            </div>
+
+            <div class="mise" onmouseover="showCards(this)" onmouseout="hideCards(this)">
+                <h3>Couleur</h3>
+                <div class="cards">
+                    <img src="../MaevaKubit/img/3_of_Diamonds.webp" alt="Carte 1">
+                    <img src="../MaevaKubit/img/10_of_Diamonds.png" alt="Carte 2">
+                    <img src="../MaevaKubit/img/Ace_of_Diamonds.webp" alt="Carte 3">
+                    <img src="../MaevaKubit/img/Queen_of_Diamonds.webp" alt="Carte 4">
+                    <img src="../MaevaKubit/img/9_of_Diamonds.webp" alt="Carte 5">
+                </div>
+            </div>
+            <div class="mise" onmouseover="showCards(this)" onmouseout="hideCards(this)">
+                <h3>Suite</h3>
+                <div class="cards">
+                    <img src="../MaevaKubit/img/Ace_of_Clubs.png" alt="Carte 1">
+                    <img src="../MaevaKubit/img/King_of_Hearts.png" alt="Carte 2">
+                    <img src="../MaevaKubit/img/Queen_of_Diamonds.webp" alt="Carte 3">
+                    <img src="../MaevaKubit/img/Jack_of_Spades.png" alt="Carte 4">
+                    <img src="../MaevaKubit/img/10_of_Diamonds.png" alt="Carte 5">
+                </div>
+            </div>
+
+            <div class="mise" onmouseover="showCards(this)" onmouseout="hideCards(this)">
+                <h3>Brelan</h3>
+                <div class="cards">
+                    <img src="../MaevaKubit/img/Ace_of_Clubs.png" alt="Carte 1">
+                    <img src="../MaevaKubit/img/Ace_of_Clubs.png" alt="Carte 2">
+                    <img src="../MaevaKubit/img/Ace_of_Clubs.png" alt="Carte 3">
+                </div>
+            </div>
+
+            <div class="mise" onmouseover="showCards(this)" onmouseout="hideCards(this)">
+                <h3>Double Paire</h3>
+                <div class="cards">
+                    <img src="../MaevaKubit/img/Jack_of_Spades.png" alt="Carte 1">
+                    <img src="../MaevaKubit/img/Jack_of_Spades.png" alt="Carte 2">
+                    <img src="../MaevaKubit/img/Ace_of_Clubs.png" alt="Carte 3">
+                    <img src="../MaevaKubit/img/Ace_of_Clubs.png" alt="Carte 4">
+                </div>
+            </div>
+
+            <div class="mise" onmouseover="showCards(this)" onmouseout="hideCards(this)">
+                <h3>Paire</h3>
+                <div class="cards">
+                    <img src="../MaevaKubit/img/Jack_of_Spades.png" alt="Carte 1">
+                    <img src="../MaevaKubit/img/Jack_of_Spades.png" alt="Carte 2">
+                </div>
+            </div>
+
+            <div class="mise" onmouseover="showCards(this)" onmouseout="hideCards(this)">
+                <h3>Carte Haute</h3>
+                <div class="cards">
+                    <img src="../MaevaKubit/img/Jack_of_Spades.png" alt="Carte 5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Section Tarot -->
+    <section id="Tarot" class="tab-content">
+    <div class="content-container">
+        <div class="box">
+            <img src="../MaevaKubit/img/Tarot_Death.png" alt="Tarot Image 1">
+            <div class="text-content">
+                <h3>Death</h3>
+                <p>Selectionne deux cartes, convertie la catre de gauche en celle de droite </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="../MaevaKubit/img/Tarot_Hermit.png" alt="Tarot Image 2">
+            <div class="text-content">
+                <h3>Hermit</h3>
+                <p>Double l'argent</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="../MaevaKubit/img/Tarot_Sun.png" alt="Tarot Image 3">
+            <div class="text-content">
+                <h3>The Sun</h3>
+                <p>Convertie 3 cartes selectionnees en carte coeur</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <p>&copy; Maeva Kubit</p>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+</html>
+
+
